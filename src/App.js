@@ -11,10 +11,15 @@ import jointData from "./data/JointData";
 import AboutAtm from "./components/AboutAtm";
 import atmData from "./data/AtmData";
 
+import Review from "./components/Review";
+import reviews from "./data/ReviewsData";
+
 function App() {
   const [about, setAbout] = useState(aboutData);
   const [aboutJoint, setAboutJoint] = useState(jointData);
   const [aboutAtm, setAboutAtm] = useState(atmData);
+
+  const [review, setReviews] = useState(reviews);
 
   return (
     <div>
@@ -33,6 +38,9 @@ function App() {
       {aboutAtm.map((aboutAtm) => {
         return <AboutAtm {...aboutAtm} />;
       })}
+
+      <h1>Reviews</h1>
+      <Review {...review} />
     </div>
   );
 }
