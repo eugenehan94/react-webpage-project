@@ -12,23 +12,21 @@ import AboutAtm from "./components/AboutAtm";
 import atmData from "./data/AtmData";
 
 import Review from "./components/Review";
-import reviews from "./data/ReviewsData";
 
 function App() {
   const [about, setAbout] = useState(aboutData);
   const [aboutJoint, setAboutJoint] = useState(jointData);
   const [aboutAtm, setAboutAtm] = useState(atmData);
 
-  const [review, setReviews] = useState(reviews);
-
   return (
     <div>
       <Head />
-      <h1>About</h1>
-      {about.map((about) => {
-        return <About {...about} />;
-      })}
-
+      <div className="faq-container">
+        <h1>About</h1>
+        {about.map((about) => {
+          return <About {...about} />;
+        })}
+      </div>
       <h1>Accounts</h1>
       <h3>Joint accounts</h3>
       {aboutJoint.map((aboutJoint) => {
@@ -40,7 +38,7 @@ function App() {
       })}
 
       <h1>Reviews</h1>
-      <Review {...review} />
+      <Review />
     </div>
   );
 }

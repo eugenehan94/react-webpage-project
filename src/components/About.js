@@ -3,13 +3,12 @@ import React, { useState } from "react";
 const About = ({ title, info }) => {
   const [showInfo, setShowInfo] = useState(false);
   return (
-    <article>
-      <h2>{title}</h2>
-      <button onClick={() => setShowInfo(!showInfo)}>
-        {showInfo ? "x" : "+"}
+    <section>
+      <button className="faq-button" onClick={() => setShowInfo(!showInfo)}>
+        <h2>{title}</h2>
       </button>
       {showInfo && <p>{info}</p>}
-    </article>
+    </section>
   );
 };
 
