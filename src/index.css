@@ -46,7 +46,8 @@ code {
 .faq-container {
   margin: 0 2rem;
 }
-.faq-container h1 {
+.faq-container h1,
+.faq-container h2 {
   text-align: center;
 }
 
@@ -57,4 +58,21 @@ code {
   cursor: pointer;
   overflow: hidden;
   width: 100%;
+}
+
+.review-container {
+  border: 1px solid black;
+  background-color: pink;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.review-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.paragraph-underline {
+  border-bottom: 1px solid black;
 }

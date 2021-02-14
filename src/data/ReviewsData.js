@@ -1,39 +1,35 @@
 const reviews = [
   {
     id: 1,
-    name: "susan smith",
-    job: "web developer",
+    name: "Kaylee Noel",
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
     text:
-      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+      '"I like the fact that you have the option of making your own fortune as well as access to rely on professionals"',
   },
   {
     id: 2,
-    name: "anna johnson",
-    job: "web designer",
+    name: "Amrita Hickman",
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
     text:
-      "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
+      '"Everything is straightforward and dealing with everyone here gives me confidence that I made the right choice. Compared with my previous broker, its night-and-day"',
   },
   {
     id: 3,
-    name: "peter jones",
-    job: "intern",
+    name: "Giorgio Kent",
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
     text:
-      "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+      '"I want to thank you guys for making my banking experience so easy. I have been using your account nicknaming feature for all my accounts since July and its been amazing to identify and keep track of our different savings accounts. This used to be a huge irritant for our family, so thank you for listening."',
   },
   {
     id: 4,
-    name: "bill anderson",
-    job: "the boss",
+    name: "Rex Lowery",
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
     text:
-      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+      '"Friendly and helpful staff. I have been with them for over 14 years!" ',
   },
 ];
 

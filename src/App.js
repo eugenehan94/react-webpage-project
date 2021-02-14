@@ -23,20 +23,22 @@ function App() {
       <Head />
       <div className="faq-container">
         <h1>About</h1>
+
         {about.map((about) => {
           return <About {...about} />;
         })}
-      </div>
-      <h1>Accounts</h1>
-      <h3>Joint accounts</h3>
-      {aboutJoint.map((aboutJoint) => {
-        return <AboutJoint {...aboutJoint} />;
-      })}
-      <h3>ATM</h3>
-      {aboutAtm.map((aboutAtm) => {
-        return <AboutAtm {...aboutAtm} />;
-      })}
 
+        <h1>Accounts</h1>
+        <h2>Joint accounts</h2>
+        {aboutJoint.map((aboutJoint) => {
+          return <AboutJoint {...aboutJoint} />;
+        })}
+
+        <h2>ATM</h2>
+        {aboutAtm.map((aboutAtm) => {
+          return <AboutAtm {...aboutAtm} />;
+        })}
+      </div>
       <h1>Reviews</h1>
       <Review />
     </div>

@@ -7,7 +7,7 @@ const About = ({ title, info }) => {
       <button className="faq-button" onClick={() => setShowInfo(!showInfo)}>
         <h2>{title}</h2>
       </button>
-      {showInfo && <p>{info}</p>}
+      <div className="paragraph-underline">{showInfo && <p>{info}</p>}</div>
     </section>
   );
 };
