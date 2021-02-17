@@ -13,7 +13,7 @@ const AboutJoint = ({ title, info }) => {
         <h2>{title}</h2>
         {showInfo ? "x" : "+"}
       </button>
-      {showInfo && <p>{info}</p>}
+      <div className="faq-content"> {showInfo && <p>{info}</p>} </div>
     </section>
   );
 };

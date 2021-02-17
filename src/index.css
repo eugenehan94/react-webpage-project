@@ -12,6 +12,14 @@ code {
     monospace;
 }
 
+.navbar {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+}
+
 .head-background {
   background-color: rgb(192, 192, 192);
   height: 70vh;
@@ -63,16 +71,56 @@ code {
 .review-container {
   border: 1px solid black;
   background-color: pink;
-  padding: 1.5rem 2rem;
   border-radius: 0.25rem;
-  text-align: center;
 }
+.review-box {
+  display: flex;
+}
+.review-container-1 {
+  border: 1px solid red;
+  padding: 0 2rem;
+}
+.review-container-2 {
+  border: 1px solid red;
+  width: 20%;
+}
+.review-container-3 {
+  border: 1px solid black;
+  padding: 2rem;
+  margin-left: 1rem;
+  width: 50%;
+}
+
 .review-container img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
-.paragraph-underline {
-  border-bottom: 1px solid black;
+.review-container-previous,
+.review-container-next {
+  display: flex;
+  align-items: center;
+}
+
+.review-next-btn,
+.review-previous-btn {
+  font-size: 2rem;
+  outline: none;
+  border-color: transparent;
+  background: transparent;
+  cursor: pointer;
+  margin: 0 0.75rem;
+}
+.review-next-btn:hover,
+.review-previous-btn:hover {
+  color: hsl(205, 78%, 60%);
+}
+
+.review-image {
+  object-fit: cover;
+}
+
+.faq-content {
+  border-bottom: 1px solid rgb(124, 123, 123);
 }
