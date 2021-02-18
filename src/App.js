@@ -15,6 +15,8 @@ import atmData from "./data/AtmData";
 
 import Review from "./components/Review";
 
+import Footer from "./components/Footer";
+
 function App() {
   const [about, setAbout] = useState(aboutData);
   const [aboutJoint, setAboutJoint] = useState(jointData);
@@ -44,6 +46,7 @@ function App() {
       </div>
       <h1>Reviews</h1>
       <Review />
+      <Footer />
     </div>
   );
 }

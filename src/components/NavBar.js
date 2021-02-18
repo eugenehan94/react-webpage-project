@@ -1,30 +1,44 @@
 import React, { useState } from "react";
 import "../index.css";
-
+import { FaMoneyBillWave, FaList } from "react-icons/fa";
 function NavBar() {
   const [click, setClick] = useState(false);
+
+  const clickHandler = () => {
+    setClick(!click);
+  };
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <div>
-            <h1>Logo</h1>
+          <div className="navbar-logo">
+            <h1>
+              <FaMoneyBillWave />
+            </h1>
           </div>
 
-          <div>
-            <h1>Menu bar</h1>
+          <div className="navbar-menu" onClick={clickHandler}>
+            <h1>
+              <FaList />
+            </h1>
           </div>
 
-          <ul className={/click ?  "menu active" : "menu"/}>
-            <li className={/item/}>
-              <a href="#">Home</a>
+          <ul className="navbar-item-container">
+            <li className="navbar-items">
+              <a href="#" className="navbar-links">
+                Home
+              </a>
             </li>
-            <li className={/item/}>
-              <a href="#">Services</a>
+            <li className="navbar-items">
+              <a href="#" className="navbar-links">
+                Services
+              </a>
             </li>
-            <li className={/item/}>
-              <a href="#">Sign-up</a>
+            <li className="navbar-items">
+              <a href="#" className="navbar-links">
+                Sign-up
+              </a>
             </li>
           </ul>
         </div>
