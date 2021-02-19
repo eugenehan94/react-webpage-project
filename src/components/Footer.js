@@ -29,15 +29,15 @@ function Footer() {
       <div className="footer-links-container">
         <div className="footer-items">
           <div className="footer-links">
-            <h2>About us</h2>
-            <a href="#">How it works</a>
-            <a href="#">Second text</a>
-            <a href="#">Careers</a>
-            <a href="#">Investors</a>
-            <a href="#">Terms and Conditions</a>
+            <h2>Shopping Tools</h2>
+            <a href="#">Store Locator</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Cars Parts Selector</a>
+            <a href="#">Tire Selector</a>
+            <a href="#">Brand Name Selector</a>
           </div>
           <div className="footer-links">
-            <h2>About us</h2>
+            <h2>Services</h2>
             <a href="#">How it works</a>
             <a href="#">Second text</a>
             <a href="#">Careers</a>
@@ -48,20 +48,20 @@ function Footer() {
 
         <div className="footer-items">
           <div className="footer-links">
-            <h2>About us</h2>
-            <a href="#">How it works</a>
-            <a href="#">Second text</a>
-            <a href="#">Careers</a>
-            <a href="#">Investors</a>
-            <a href="#">Terms and Conditions</a>
+            <h2>Support</h2>
+            <a href="#">Online Ordering</a>
+            <a href="#">Check Order Status</a>
+            <a href="#">Update Order</a>
+            <a href="#">Customer Service/FAQ</a>
+            <a href="#">Returns</a>
           </div>
           <div className="footer-links">
-            <h2>About us</h2>
-            <a href="#">How it works</a>
-            <a href="#">Second text</a>
-            <a href="#">Careers</a>
-            <a href="#">Investors</a>
-            <a href="#">Terms and Conditions</a>
+            <h2>Corporate</h2>
+            <a href="#">Corporate Information</a>
+            <a href="#">Careera</a>
+            <a href="#">Business Opportunities</a>
+            <a href="#">Financial Services</a>
+            <a href="#">Reports</a>
           </div>
         </div>
       </div>

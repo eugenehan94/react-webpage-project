@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import Feedback from "./components/Feedback";
+
 import NavBar from "./components/NavBar";
 
 import Head from "./components/Head";
@@ -26,6 +28,8 @@ function App() {
     <div>
       <NavBar />
       <Head />
+      <Feedback />
+
       <div className="faq-container">
         <h1>About</h1>
 

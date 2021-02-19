@@ -13,9 +13,8 @@ function NavBar() {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="navbar-logo">
-            <h1>
-              <FaMoneyBillWave />
-            </h1>
+            <h1>Home</h1>
+            <FaMoneyBillWave className="navbar-icon" />
           </div>
 
           <div className="navbar-menu" onClick={clickHandler}>

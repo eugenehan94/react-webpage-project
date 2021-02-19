@@ -12,6 +12,17 @@ code {
     monospace;
 }
 
+.feedback-container {
+  position: fixed;
+  bottom: 40%;
+  right: 0;
+  writing-mode: vertical-rl;
+  border: 1px solid red;
+  background: red;
+  border-radius: 2px;
+  padding: 1rem 0rem;
+}
+
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   position: sticky;
@@ -28,6 +39,14 @@ code {
   color: #ffffff;
   cursor: pointer;
   margin-left: 10px;
+  font-size: 1rem;
+  margin-left: 25px;
+  display: flex;
+}
+.navbar-icon {
+  font-size: 2rem;
+  margin-left: 1rem;
+  align-self: center;
 }
 
 .navbar-menu {
@@ -48,22 +67,6 @@ code {
   color: #ffffff;
   text-decoration: none;
   margin: 0 2rem;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar-menu {
-    display: block;
-    top: 0;
-    right: 0;
-    position: absolute;
-    color: #ffffff;
-    transform: translate(-20%, 0%);
-    cursor: pointer;
-  }
-
-  .navbar-links {
-    display: none;
-  }
 }
 
 .head-background {
@@ -118,6 +121,8 @@ code {
   border: 1px solid black;
   background-color: pink;
   border-radius: 0.25rem;
+  margin: 1rem 5rem;
+  padding: 1rem 0;
 }
 .review-box {
   display: flex;
@@ -126,15 +131,19 @@ code {
   border: 1px solid red;
   padding: 0 2rem;
 }
+
+.review-img-container {
+  border: 1px solid green;
+}
 .review-container-2 {
   border: 1px solid red;
-  width: 20%;
+  text-align: center;
+}
+.review-container-2 h1 {
+  margin: 0;
 }
 .review-container-3 {
   border: 1px solid black;
-  padding: 2rem;
-  margin-left: 1rem;
-  width: 50%;
 }
 
 .review-container img {
@@ -143,10 +152,10 @@ code {
   border-radius: 50%;
 }
 
-.review-container-previous,
-.review-container-next {
+.review-btn-container {
+  border: 1px solid green;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .review-next-btn,
@@ -156,7 +165,6 @@ code {
   border-color: transparent;
   background: transparent;
   cursor: pointer;
-  margin: 0 0.75rem;
 }
 .review-next-btn:hover,
 .review-previous-btn:hover {
@@ -176,7 +184,6 @@ code {
   justify-content: center;
   align-self: center;
   padding: 2rem 0 2rem 0;
-  border: 1px solid red;
 }
 .footer-subscribe {
   color: #ffffff;
@@ -185,7 +192,6 @@ code {
   justify-content: center;
   margin-bottom: 24px;
   text-align: center;
-  border: 1px solid white;
 }
 .footer-subscribe-title {
   font-size: 32px;
@@ -207,24 +213,25 @@ code {
   padding: 10px 20px;
   border: 1px solid #ffffff;
   font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.footer-subscribe-btn:hover {
+  background-color: #272323;
 }
 
 .footer-links-container {
   display: flex;
   justify-content: center;
-
-  border: 1px solid white;
 }
 .footer-items {
   display: flex;
 }
 .footer-links {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 250px;
-  margin: 0 2rem;
+  margin: 2rem;
 }
 .footer-links h2 {
   margin-bottom: 20px;
@@ -263,4 +270,39 @@ code {
 .footer-copyright p {
   color: #ffffff;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-menu {
+    display: block;
+    top: 0;
+    right: 0;
+    position: absolute;
+    color: #ffffff;
+    transform: translate(-100%, 0%);
+    cursor: pointer;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+  .review-container {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  .review-box {
+    flex-direction: column;
+  }
+  .review-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .review-container-3 p {
+    padding: 0 2rem;
+  }
+
+  .footer-items {
+    flex-direction: column;
+  }
 }

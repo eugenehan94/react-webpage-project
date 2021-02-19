@@ -32,22 +32,24 @@ const Review = () => {
     <section>
       <div className="review-container">
         <div className="review-box">
-          <div className="review-container-previous">
-            <button className="review-previous-btn" onClick={previous}>
-              <FaArrowAltCircleLeft />
-            </button>
-          </div>
           <div className="review-container-1">
-            <img src={image} alt={name} className="review-image" />
+            <div className="review-img-container">
+              <img src={image} alt={name} className="review-image" />
+            </div>
+            <div className="review-container-2">
+              <h1>{name}</h1>
+            </div>
+            <div className="review-btn-container">
+              <button className="review-previous-btn" onClick={previous}>
+                <FaArrowAltCircleLeft />
+              </button>
+
+              <button className="review-next-btn" onClick={next}>
+                <FaArrowAltCircleRight />
+              </button>
+            </div>
           </div>
-          <div className="review-container-next">
-            <button className="review-next-btn" onClick={next}>
-              <FaArrowAltCircleRight />
-            </button>
-          </div>
-          <div className="review-container-2">
-            <h1>{name}</h1>
-          </div>
+
           <div className="review-container-3">
             <p>{text}</p>
           </div>
