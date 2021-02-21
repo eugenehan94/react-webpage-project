@@ -12,17 +12,105 @@ code {
     monospace;
 }
 
-.feedback-container {
+.feedback-btn {
   position: fixed;
-  bottom: 40%;
-  right: 0;
-  writing-mode: vertical-rl;
-  border: 1px solid red;
+  top: 40%;
+  left: 100%;
+  transform-origin: 0% 0%;
+  border: none;
   background: red;
   border-radius: 2px;
-  padding: 1rem 0rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transform: rotate(90deg);
+  color: #ffffff;
+  outline: none;
+  font-size: 20px;
+}
+.feedback-btn:hover {
+  background: rgb(175, 7, 7);
+}
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.modal-wrapper {
+  background: #ffffff;
+  width: 40%;
+  height: 90%;
+  padding: 0.7rem;
+  border-radius: 4px;
+  box-shadow: rgb(26, 23, 23);
+}
+.modal-close-btn {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 36px;
+
+  margin-right: 10px;
+  margin-top: 0;
+}
+.modal-close-btn span {
+  cursor: pointer;
 }
 
+.modal-header {
+  display: flex;
+  justify-content: center;
+}
+.modal-textarea textarea {
+  resize: none;
+  width: 100%;
+  height: 20vh;
+  overflow-y: scroll;
+  font-size: 18px;
+}
+.modal-textarea p {
+  margin-top: 0;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-buttons-cancel {
+  border: 1px solid rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+  background: transparent;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-right: 1rem;
+}
+.modal-buttons-cancel:hover {
+  color: white;
+  background-color: rgb(148, 15, 15);
+  border: 1px solid rgb(148, 15, 15);
+}
+.modal-buttons-submit {
+  background-color: red;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 18px;
+  border-radius: 3px;
+  border: none;
+}
+.modal-buttons-submit:hover {
+  background-color: rgb(148, 15, 15);
+}
+.modal-footer {
+  text-align: right;
+}
+.modal-footer p {
+  margin: 0;
+  padding: 0;
+}
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   position: sticky;
@@ -71,19 +159,15 @@ code {
 
 .head-background {
   background-color: rgb(192, 192, 192);
-  height: 70vh;
-  display: relative;
-  align-items: center;
+  height: 90vh;
+  padding: 1px;
 }
 .head-innerbox {
-  background-color: white;
-  width: 50vw;
-  padding: 1.5rem;
+  background-color: rgb(251, 249, 249);
   border-radius: 20px;
-  display: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(10%, 40%);
+  width: 50%;
+  margin: 70px 0 0 50px;
+  padding: 2rem;
 }
 .head-innerbox h1 {
   font-size: 40px;
@@ -103,47 +187,43 @@ code {
 .faq-container {
   margin: 0 2rem;
 }
-.faq-container h1,
-.faq-container h2 {
-  text-align: center;
-}
 
 .faq-button {
   background-color: Transparent;
-  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   overflow: hidden;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-icon {
+  font-size: 30px;
 }
 
 .review-container {
-  border: 1px solid black;
   background-color: pink;
   border-radius: 0.25rem;
   margin: 1rem 5rem;
   padding: 1rem 0;
 }
+.review-header {
+  text-align: center;
+  margin: 0px 0px 1rem 0px;
+}
 .review-box {
   display: flex;
 }
 .review-container-1 {
-  border: 1px solid red;
   padding: 0 2rem;
 }
 
-.review-img-container {
-  border: 1px solid green;
-}
 .review-container-2 {
-  border: 1px solid red;
   text-align: center;
 }
 .review-container-2 h1 {
   margin: 0;
-}
-.review-container-3 {
-  border: 1px solid black;
 }
 
 .review-container img {
@@ -153,7 +233,6 @@ code {
 }
 
 .review-btn-container {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
 }
@@ -273,6 +352,15 @@ code {
 }
 
 @media screen and (max-width: 800px) {
+  .modal-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem;
+  }
+  .modal-footer p {
+    margin-right: 10px;
+  }
+
   .navbar-menu {
     display: block;
     top: 0;
@@ -284,6 +372,20 @@ code {
   }
 
   .navbar-links {
+    display: none;
+  }
+  .head-background {
+    height: 50vh;
+  }
+  .head-innerbox {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+    text-align: center;
+  }
+  .underline {
     display: none;
   }
   .review-container {

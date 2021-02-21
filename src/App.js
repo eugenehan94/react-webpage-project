@@ -23,12 +23,21 @@ function App() {
   const [about, setAbout] = useState(aboutData);
   const [aboutJoint, setAboutJoint] = useState(jointData);
   const [aboutAtm, setAboutAtm] = useState(atmData);
+  const [modal, setModal] = useState(false);
+
+  const closeModal = () => {
+    setModal(false);
+  };
 
   return (
     <div>
+      <button onClick={() => setModal(true)} className="feedback-btn">
+        Feedback
+      </button>
+
       <NavBar />
       <Head />
-      <Feedback />
+      {modal ? <Feedback show={modal} closeModal={closeModal} /> : null}
 
       <div className="faq-container">
         <h1>About</h1>
@@ -48,7 +57,7 @@ function App() {
           return <AboutAtm {...aboutAtm} />;
         })}
       </div>
-      <h1>Reviews</h1>
+
       <Review />
       <Footer />
     </div>

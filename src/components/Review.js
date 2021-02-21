@@ -31,6 +31,7 @@ const Review = () => {
   return (
     <section>
       <div className="review-container">
+        <h1 className="review-header">Reviews</h1>
         <div className="review-box">
           <div className="review-container-1">
             <div className="review-img-container">

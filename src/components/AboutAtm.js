@@ -6,7 +6,7 @@ const AboutAtm = ({ title, info }) => {
     <section>
       <button className="faq-button" onClick={() => setShowInfo(!showInfo)}>
         <h2>{title}</h2>
-        {showInfo ? "x" : "+"}
+        <span className="faq-icon"> {showInfo ? "x" : "+"}</span>
       </button>
       <div className="faq-content"> {showInfo && <p>{info}</p>} </div>
     </section>
