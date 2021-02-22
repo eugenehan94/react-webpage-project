@@ -17,6 +17,9 @@ import atmData from "./data/AtmData";
 
 import Review from "./components/Review";
 
+import Offers from "./components/Offers";
+import offerData from "./data/OfferData";
+
 import Footer from "./components/Footer";
 
 function App() {
@@ -24,6 +27,7 @@ function App() {
   const [aboutJoint, setAboutJoint] = useState(jointData);
   const [aboutAtm, setAboutAtm] = useState(atmData);
   const [modal, setModal] = useState(false);
+  const [offerList, setOfferList] = useState(offerData);
 
   const closeModal = () => {
     setModal(false);
@@ -57,7 +61,7 @@ function App() {
           return <AboutAtm {...aboutAtm} />;
         })}
       </div>
-
+      <Offers offerList={offerList} />
       <Review />
       <Footer />
     </div>
