@@ -1,16 +1,13 @@
 import React from "react";
 import Offer from "./Offer";
 
-const Offers = ({ offerList }) => {
+const Offers = ({ offerList, removeOffer }) => {
   return (
     <section>
-      <div>
-        <h1>Offers</h1>
-      </div>
-      <div>
-        <p>Return each tour</p>
+      <div>{offerList.length === 0 ? null : <h1>Offers</h1>}</div>
+      <div className="offers-container">
         {offerList.map((offer) => {
-          return <Offer key={offer.id} {...offer} />;
+          return <Offer key={offer.id} removeOffer={removeOffer} {...offer} />;
         })}
       </div>
     </section>

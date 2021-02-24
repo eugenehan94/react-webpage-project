@@ -33,6 +33,11 @@ function App() {
     setModal(false);
   };
 
+  const removeOffer = (id) => {
+    const newOfferList = offerList.filter((offers) => offers.id !== id);
+    setOfferList(newOfferList);
+  };
+
   return (
     <div>
       <button onClick={() => setModal(true)} className="feedback-btn">
@@ -61,7 +66,7 @@ function App() {
           return <AboutAtm {...aboutAtm} />;
         })}
       </div>
-      <Offers offerList={offerList} />
+      <Offers offerList={offerList} removeOffer={removeOffer} />
       <Review />
       <Footer />
     </div>

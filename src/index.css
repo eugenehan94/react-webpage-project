@@ -201,13 +201,51 @@ code {
 .faq-icon {
   font-size: 30px;
 }
-
+.offers-container {
+  display: flex;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
 .offer-wrapper {
-  background-color: green;
+  width: 40%;
+  margin-top: 20px;
+  padding: 0.5rem;
+  background-color: #fdfafa;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .offer-wrapper img {
   width: 100%;
   height: 20rem;
+}
+.offer-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+}
+.offer-text {
+  border: 1px solid green;
+}
+.offer-text button {
+  background-color: transparent;
+  border: none;
+  color: rgb(18, 136, 18);
+}
+.offer-removeBtn-container {
+  display: flex;
+  justify-content: center;
+}
+.offer-wrapper-btn {
+  background-color: transparent;
+  color: red;
+  border-color: red;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
 }
 
 .review-container {
@@ -395,6 +433,19 @@ code {
   }
   .underline {
     display: none;
+  }
+
+  .offers-container {
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 3rem;
+  }
+  .offer-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0.5rem;
   }
   .review-container {
     margin: 0;
