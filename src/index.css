@@ -201,9 +201,13 @@ code {
 .faq-icon {
   font-size: 30px;
 }
+.offer-heading {
+  text-align: center;
+  margin-top: 3rem;
+}
 .offers-container {
   display: flex;
-  border: 1px solid red;
+
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 3rem;
@@ -226,7 +230,7 @@ code {
   margin: 0 10px 0 10px;
 }
 .offer-text {
-  border: 1px solid green;
+  margin-bottom: 2rem;
 }
 .offer-text button {
   background-color: transparent;
@@ -437,7 +441,6 @@ code {
 
   .offers-container {
     display: flex;
-    border: 1px solid red;
     flex-wrap: wrap;
     justify-content: left;
     margin-bottom: 3rem;
