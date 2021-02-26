@@ -182,10 +182,14 @@ code {
   width: 3rem;
   background: rgb(255, 0, 0);
   margin-top: 0px;
+  margin-bottom: 1rem;
 }
 
 .faq-container {
   margin: 0 2rem;
+}
+.faq-container h1 {
+  margin-bottom: 0;
 }
 
 .faq-button {
@@ -258,6 +262,9 @@ code {
   margin: 1rem 5rem;
   padding: 1rem 0;
 }
+.review-container-1 {
+  border-right: 1px solid black;
+}
 .review-header {
   text-align: center;
   margin: 0px 0px 1rem 0px;
@@ -274,6 +281,9 @@ code {
 }
 .review-container-2 h1 {
   margin: 0;
+}
+.review-container-3 {
+  padding-left: 2rem;
 }
 
 .review-container img {
@@ -420,8 +430,7 @@ code {
     transform: translate(-100%, 0%);
     cursor: pointer;
   }
-
-  .navbar-links {
+  .navbar-items {
     display: none;
   }
   .head-background {
@@ -461,6 +470,9 @@ code {
   .review-img-container {
     display: flex;
     justify-content: center;
+  }
+  .review-container-1 {
+    border-right: none;
   }
   .review-container-3 p {
     padding: 0 2rem;

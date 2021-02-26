@@ -50,12 +50,13 @@ function App() {
 
       <div className="faq-container">
         <h1>About</h1>
-
+        <div className="underline"></div>
         {about.map((about) => {
           return <About {...about} />;
         })}
 
         <h1>Accounts</h1>
+        <div className="underline"></div>
         <h2>Joint accounts</h2>
         {aboutJoint.map((aboutJoint) => {
           return <AboutJoint {...aboutJoint} />;

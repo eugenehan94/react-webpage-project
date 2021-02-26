@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../index.css";
-import { FaMoneyBillWave, FaList } from "react-icons/fa";
+import { FaMoneyBillWave, FaList, FaRegWindowClose } from "react-icons/fa";
 function NavBar() {
   const [click, setClick] = useState(false);
 
@@ -17,20 +17,18 @@ function NavBar() {
         </div>
 
         <div className="navbar-menu" onClick={clickHandler}>
-          <h1>
-            <FaList />
-          </h1>
+          <h1>{click ? <FaRegWindowClose /> : <FaList />}</h1>
         </div>
 
-        <ul className="navbar-item-container">
+        <ul className={"navbar-item-container"}>
           <li className="navbar-items">
             <a href="#" className="navbar-links">
-              Home
+              Services
             </a>
           </li>
           <li className="navbar-items">
             <a href="#" className="navbar-links">
-              Services
+              Contact Us
             </a>
           </li>
           <li className="navbar-items">
