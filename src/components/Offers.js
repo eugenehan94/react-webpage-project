@@ -5,7 +5,7 @@ const Offers = ({ offerList, removeOffer }) => {
   return (
     <section>
       <div className="offer-heading">
-        <h1>{offerList.length === 0 ? null : <h1>Offers</h1>} </h1>
+        {offerList.length === 0 ? null : <h1>Offers</h1>}
       </div>
       <div className="offers-container">
         {offerList.map((offer) => {

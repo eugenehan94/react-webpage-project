@@ -52,19 +52,19 @@ function App() {
         <h1>About</h1>
         <div className="underline"></div>
         {about.map((about) => {
-          return <About {...about} />;
+          return <About key={about.id} {...about} />;
         })}
 
         <h1>Accounts</h1>
         <div className="underline"></div>
         <h2>Joint accounts</h2>
         {aboutJoint.map((aboutJoint) => {
-          return <AboutJoint {...aboutJoint} />;
+          return <AboutJoint key={aboutJoint.id} {...aboutJoint} />;
         })}
 
         <h2>ATM</h2>
         {aboutAtm.map((aboutAtm) => {
-          return <AboutAtm {...aboutAtm} />;
+          return <AboutAtm key={aboutAtm.id} {...aboutAtm} />;
         })}
       </div>
       <Offers offerList={offerList} removeOffer={removeOffer} />
