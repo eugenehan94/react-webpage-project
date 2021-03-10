@@ -1,6 +1,6 @@
 const offerData = [
   {
-    id: "rec6d6T3q5EBIdCfD",
+    id: "1",
     name: "Chequing Account",
     info:
       "A chequing account is the most basic transactional bank account offered by banks, credit unions and small lenders. Chequing accounts are typically meant to serve as a transactions account. For example, most people have their paycheques from work deposited into a chequing account, then pay for purchases, services and their credit card bills with the money that's in there.",
@@ -9,7 +9,7 @@ const offerData = [
     price: "Free",
   },
   {
-    id: "recIwxrvU9HfJR3B4",
+    id: "2",
     name: "Savings Account",
     info:
       "A savings account is a bank account that pays you interest in exchange for depositing money and maintaining a balance in the account. Savings accounts are not meant to be used to perform your day-to-day transactions; instead, they are meant to serve as a short-term investment vehicle, for you to deposit some money and earn a little interest on it. For example, you may use a savings account to save up for a big purchase, such as a new electronic, a piece of furniture or a trip.",
@@ -18,7 +18,7 @@ const offerData = [
     price: "1.00/month",
   },
   {
-    id: "recJLWcHScdUtI3ny",
+    id: "3",
     name: "Personal Line of Credit",
     info:
       "A personal line of credit is usually an unsecured loan, which means you won’t need a house or car as collateral in order to qualify. As with a credit card, it typically comes with an adjustable interest rate, a fixed payment schedule and a credit limit on how much you can borrow. It will also have set periods for when you can draw — or borrow — money and when you have to repay it.",
@@ -27,7 +27,7 @@ const offerData = [
     price: "5.00%",
   },
   {
-    id: "recK2AOoVhIHPLUwn",
+    id: "4",
     name: "Secured Line of Credit",
     info:
       "When any loan is secured, the financial institution has established a lien against an asset that belongs to the borrower. This asset becomes collateral, and it can be seized or liquidated by the lender in the event of default. A common example is a home mortgage or a new car loan. The bank agrees to loan the money while obtaining collateral in the form of the home or the car.",
@@ -36,7 +36,7 @@ const offerData = [
     price: "2.45%",
   },
   {
-    id: "receAEzz86KzW2gvH",
+    id: "5",
     name: "Mortgage",
     info:
       "A mortgage is a type of loan often used to buy a home or other property. A mortgage allows the lender to take possession of the property if you don't repay the loan on time. The property is the security for the loan. Normally, a mortgage is a large loan and is paid off over many years.When you get a mortgage loan, you are called the mortgagor. The lender is called the mortgagee. Under a mortgage, you are responsible for making regular payments to the lender. The payments cover the interest on the loan plus part of the principal (the amount of the loan). Payments may also include property taxes, insurance and similar charges.",

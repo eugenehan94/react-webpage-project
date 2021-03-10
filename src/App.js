@@ -51,9 +51,7 @@ function App() {
       <div className="faq-container">
         <h1>About</h1>
         <div className="underline"></div>
-        {about.map((about) => {
-          return <About key={about.id} {...about} />;
-        })}
+        <About />
 
         <h1>Accounts</h1>
         <div className="underline"></div>
