@@ -5,9 +5,7 @@ const About = ({ title, info, id }) => {
   const [clicked, setClicked] = useState(false);
 
   const toggle = (index) => {
-    console.log(index);
     if (clicked === index) {
-      //if clicked question is already active, then close it
       return setClicked(null);
     }
     setClicked(index);

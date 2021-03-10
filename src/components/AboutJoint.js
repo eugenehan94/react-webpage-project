@@ -1,19 +1,36 @@
 import React, { useState } from "react";
-
+import jointData from "../data/JointData";
 const AboutJoint = ({ title, info }) => {
-  const [showInfo, setShowInfo] = useState(false);
+  const [clicked, setClicked] = useState(false);
+
+  const toggle = (id) => {
+    console.log(clicked);
+    if (clicked === id) {
+      return setClicked(null);
+    }
+    return setClicked(id);
+  };
+
   return (
     <section>
-      <button
-        className="faq-button"
-        onClick={() => {
-          setShowInfo(!showInfo);
-        }}
-      >
-        <h2>{title}</h2>
-        <span className="faq-icon"> {showInfo ? "x" : "+"}</span>
-      </button>
-      <div className="faq-content"> {showInfo && <p>{info}</p>} </div>
+      {jointData.map((item, id) => {
+        return (
+          <React.Fragment key={id}>
+            <button
+              className="faq-button"
+              onClick={() => {
+                toggle(id);
+              }}
+            >
+              <h2>{item.title}</h2>
+              <span className="faq-icon"> {clicked === id ? "x" : "+"}</span>
+            </button>
+            <div className="faq-content">
+              {clicked === id ? <p>{item.info}</p> : null}
+            </div>
+          </React.Fragment>
+        );
+      })}
     </section>
   );
 };
