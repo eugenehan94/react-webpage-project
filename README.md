@@ -1,3 +1,10 @@
+#React Webpage Project
+
+A webpage I created for fun using React. 
+
+
+# BELOW IS THE DEFAULT REACT README
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
