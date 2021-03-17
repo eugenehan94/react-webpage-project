@@ -1,4 +1,4 @@
-#React Webpage Project
+# React Webpage Project
 
 A webpage I created for fun using React. 
 
