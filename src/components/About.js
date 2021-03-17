@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import aboutData from "../data/AboutData";
 
-const About = ({ title, info, id }) => {
+const About = () => {
   const [clicked, setClicked] = useState(false);
 
   const toggle = (index) => {

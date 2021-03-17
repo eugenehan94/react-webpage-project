@@ -19,6 +19,7 @@ import Footer from "./components/Footer";
 function App() {
   const [modal, setModal] = useState(false);
   const [offerList, setOfferList] = useState(offerData);
+  const [offerItem, setOfferItem] = useState(offerData);
 
   const closeModal = () => {
     setModal(false);
@@ -52,7 +53,9 @@ function App() {
         <h2>ATM</h2>
         <AboutAtm />
       </div>
+
       <Offers offerList={offerList} removeOffer={removeOffer} />
+
       <Review />
       <Footer />
     </div>
