@@ -1,6 +1,6 @@
 # React Webpage Project
 
-A responsive webpage I created for fun using React. 
+A responsive webpage I created for fun using React.. 
 
 
 # BELOW IS THE DEFAULT REACT README
